@@ -1,0 +1,10 @@
+---
+# tasks file for get-dns-of-elb
+- name: Get the ELB facts
+  ec2_elb_facts: 
+    names  : "{{ elb.name }}"
+    region : "{{ elb.region }}"
+  register: elb_facts
+
+- name: Get the DNS of the ELB 
+  set_fact: elb="{{ elb | combine({'dns_name':elb_facts['elbs'][0]['dns_name']})}}"

@@ -1,0 +1,5 @@
+---
+# defaults file for get-dns-of-elb
+elb:
+  name:
+  region:
