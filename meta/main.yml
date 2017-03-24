@@ -1,5 +1,5 @@
 galaxy_info:
-  author: jamatute (jamatute@paradigma)
+  author: jamatute (jamatute@paradigma.com)
   description: Get the dns of an ELB
   min_ansible_version: 2.2
   license: GPLv2
